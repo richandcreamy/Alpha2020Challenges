@@ -16,10 +16,35 @@
       class HelloReact extends React.Component{
         render(){
           return(
-            <h1>Hello React!</h1>
+            <div>
+              <h1>ALPHA BABY</h1>
+              <Content />
+              <Footer />
+            </div>
           )
         }
       }
+
+      class Content extends React.Component{
+        render(){
+        return (
+        <ul>
+          <li>Heya</li>
+          <li>Joe</li>
+          <li>Richie</li>
+          <li>Tsz</li>
+          <li>Alejandro</li>
+        </ul>
+      )
+      }
+}
+      class Footer extends React.Component{
+        render(){
+        return (
+      <p> Richie, Heya </p>
+      )
+      }
+}
       const domContainer = document.querySelector('#react-container');
       ReactDOM.render(<HelloReact />, domContainer);
     </script>
